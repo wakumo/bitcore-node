@@ -13,8 +13,8 @@ RUN apk add --no-cache zeromq-dev
 ENV npm_config_zmq_external="true"
 
 RUN npm install
-ENTRYPOINT ["./docker-entrypoint.sh"]
-RUN node generate_config_file
+
+ENTRYPOINT ["node", "generate_config_file"]
 
 EXPOSE 3000
 CMD ["./bin/bitcore-node", "start"]
