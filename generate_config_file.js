@@ -4,7 +4,7 @@ const fs = require("fs");
   let config = {
     "version": "5.0.0-beta.44",
     "network": process.env.BITCOIN_NETWORK || "testnet",
-    "port": 3001,
+    "port": 3000,
     "services": [
       "web",
       "insight-api",
